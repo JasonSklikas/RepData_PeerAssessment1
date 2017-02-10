@@ -89,7 +89,7 @@ head(steps)
 ```
 
 ```
-## # A tibble: 6 × 2
+## # A tibble: 6 Ã— 2
 ##         date steps
 ##       <date> <dbl>
 ## 1 2012-10-02   126
@@ -108,7 +108,7 @@ ggplot(steps, aes(x=steps))+
   labs(title="Histogram of daily steps", x="Steps per Day", y="Frequency")       
 ```
 
-![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png)
+![plot of chunk unnamed-chunk-7](Figures/plot 1.png)
 
 
 3.Calculate and report the mean and median of the total number of steps taken per day
@@ -142,7 +142,7 @@ ggplot(interval, aes(x=interval,y=steps))+
   geom_line(color="blue")
 ```
 
-![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10-1.png)
+![plot of chunk unnamed-chunk-10](Figures/plot 2.png)
 
 Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -196,7 +196,7 @@ head(Fsteps)
 ```
 
 ```
-## # A tibble: 6 × 2
+## # A tibble: 6 Ã— 2
 ##         date    steps
 ##       <date>    <dbl>
 ## 1 2012-10-01 10766.19
@@ -215,7 +215,7 @@ ggplot(Fsteps,aes(x=steps))+
   geom_histogram(fill="red",binwidth = 1000)
 ```
 
-![plot of chunk unnamed-chunk-15](figure/unnamed-chunk-15-1.png)
+![plot of chunk unnamed-chunk-15](Figures/plot 3.png)
 
 
 ```r
@@ -267,7 +267,7 @@ line<- ggplot(avgsteps, aes(x=interval,y=steps,color=weektype))+
 print(line)
 ```
 
-![plot of chunk unnamed-chunk-18](figure/unnamed-chunk-18-1.png)
+![plot of chunk unnamed-chunk-18](Figures/plot 4.png)
 
 
 From our line graph we can see that during the weekdays the test object is more active in early times in comparison with weekends that is more active in later ours as an explanation is that during the weekdays the object is working so he moves less than weekends.
